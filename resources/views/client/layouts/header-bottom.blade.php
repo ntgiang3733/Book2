@@ -4,8 +4,8 @@
             <!-- logo -->
             <div class="col-md-3 logo_agile">
                 <h1 class="text-center">
-                    <a href="/AppStore/public/" class="font-weight-bold font-italic">
-                        <img src="assets/client/images/logo2.ico" alt=" ">Túp lều tranh 
+                    <a href="/" class="font-weight-bold font-italic">
+                        <img src="assets/client/images/logo1.ico" alt=" ">-   SAVINA
                     </a>
                 </h1>
             </div>

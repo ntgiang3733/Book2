@@ -19,8 +19,8 @@ class HomeController extends Controller
     }
 
     public function index() {
-        $product1 = Products::where('status',1)->where('idCategory',5)->get();
-        $product2 = Products::where('status',1)->where('idCategory',6)->get();
+        $product1 = Products::where('status',1)->where('idCategory',1)->get();
+        $product2 = Products::where('status',1)->where('idCategory',2)->get();
         return view('client.pages.index',['proapple' => $product1, 'proandroid' => $product2]);
     }
 

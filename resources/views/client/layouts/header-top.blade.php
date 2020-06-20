@@ -2,8 +2,8 @@
     <div class="container-fluid">
         <div class="row main-top-w3l py-2">
             <div class="col-lg-4 header-most-top">
-                <p class="text-white text-lg-left text-center">LỀU TRẠI - DU LỊCH
-                <i class="fas fa-campground"></i>
+                <p class="text-white text-lg-left text-center">WEBSITE BÁN SÁCH ONLINE SỐ 1 VIỆT NAM
+                <i class="fas fa-book-open"></i>
                 </p>
             </div>
             <div class="col-lg-8 header-right mt-lg-0 mt-2">

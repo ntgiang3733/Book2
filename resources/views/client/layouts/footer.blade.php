@@ -10,7 +10,7 @@
                             <i class="fas fa-dolly"></i>
                         </div>
                         <div class="col-8 text-form-footer">
-                            <h3>Thuê đồ siêu rẻ</h3>
+                            <h3>Mua hàng siêu rẻ</h3>
                             <p>Tiết kiệm hơn từ 10% - 50% so với giá thị trường</p>
                         </div>
                     </div>
