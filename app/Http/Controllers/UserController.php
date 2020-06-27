@@ -146,7 +146,7 @@ class UserController extends Controller
         if(Auth::attempt($data,$request->has('remember'))) {
             return back()->with('thongbao','Dang nhap thanh cong');
         } else {
-            return back()->with('error', 'Dang nhap that bai');
+            return back()->with('error', 'Đăng nhập thất bại');
         }
     }
 
@@ -173,7 +173,7 @@ class UserController extends Controller
         $data['password'] = Hash::make($request->password);
         $user = User::create($data);
         Auth::login($user);
-        return back()->with('thongbao', 'Dang ky thanh cong');
+        return back()->with('thongbao', 'Đăng ký thành công');
     }
 
     public function index() {
@@ -186,7 +186,7 @@ class UserController extends Controller
         $data = $request->only('email','password');
         if(Auth::attempt($data,$request->has('remember'))) {
             if(Auth::user()->role == 1) {
-                return redirect('admin/')->with('thongbao','Dang nhap thanh cong');
+                return redirect('admin/')->with('thongbao','Đăng nhập thành công');
             } else if (Auth::user()->role == 2) {
                 return redirect()->route('category.index');
             }else if (Auth::user()->role == 3) {
@@ -195,7 +195,7 @@ class UserController extends Controller
                 return redirect()->route('order.index');
             }
         } else {
-            return redirect()->route('login.admin')->with('error', 'Dang nhap that bai');
+            return redirect()->route('login.admin')->with('error', 'Đăng nhập thất bại');
         }
     }
 }

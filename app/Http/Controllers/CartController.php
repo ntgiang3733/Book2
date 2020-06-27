@@ -105,7 +105,7 @@ class CartController extends Controller
     {
         if($request->ajax()) {
             Cart::update($id,$request->qty, $request->timehire);
-            return response()->json(['result' => 'Da sua thanh cong']);
+            return response()->json(['result' => 'Đã sửa thành công']);
         }
     }
 
@@ -118,7 +118,7 @@ class CartController extends Controller
     public function destroy($id)
     {
         Cart::remove($id);
-            return response()->json(['result' => 'Da xoa thanh cong']);
+            return response()->json(['result' => 'Đã xóa thành công']);
     }
 
     public function addCart($id, Request $request) {
